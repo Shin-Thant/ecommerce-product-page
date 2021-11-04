@@ -1,25 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import { Box } from "@chakra-ui/layout";
+import React, { useState } from "react";
+import { Main } from "./components/Main";
+import { Navbar } from "./components/Navbar";
+import { createBreakpoints } from "@chakra-ui/theme-tools";
+
+const breakpoints = createBreakpoints({
+    sm: "530px",
+    md: "750px",
+    lg: "950px",
+});
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    const [sidebarStatus, setSidebarStatus] = useState(false);
+
+    const close = () => {
+        setSidebarStatus(false);
+    };
+    const open = () => {
+        setSidebarStatus(true);
+    };
+
+    return (
+        <Box width={["90%", "80%"]} mx="auto" my="2rem">
+            <Navbar open={open} />
+            <Main close={close} />
+        </Box>
+    );
 }
 
 export default App;
