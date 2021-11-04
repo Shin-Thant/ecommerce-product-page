@@ -7,7 +7,6 @@ import { FaHamburger } from "react-icons/fa";
 
 import logo from "../img/logo.svg";
 import avatar from "../img/image-avatar.png";
-import hamburger from "../img/icon-menu.svg";
 import { useDispatch, useSelector } from "react-redux";
 import { CartItems } from "./CartItems";
 import { openSidebar } from "../redux/actions/sideBarAction";
@@ -92,7 +91,9 @@ export const Navbar = () => {
                         position="relative"
                         onClick={() => setShowDropdown(!showDropdown)}
                     >
-                        <AiOutlineShoppingCart fontSize={["23px", "25px"]} />
+                        <AiOutlineShoppingCart
+                            fontSize={["23px", "28px", "28px"]}
+                        />
                         {items > 0 && (
                             <Badge
                                 position="absolute"
@@ -116,7 +117,7 @@ export const Navbar = () => {
                                 borderWidth="2px"
                                 borderColor="gray.200"
                                 p="10px"
-                                width="280px"
+                                width={["290px", "280px"]}
                                 height="250px"
                                 borderRadius="lg"
                                 position="absolute"

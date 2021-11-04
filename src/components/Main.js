@@ -1,13 +1,12 @@
 import { Badge, Box, Flex, Text } from "@chakra-ui/layout";
 import React, { useState } from "react";
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 import { AiOutlineShoppingCart } from "react-icons/ai";
 import { Button } from "@chakra-ui/button";
 
 import { ImgDetailsGroup, ImgPreviewGroup } from "./ImgGroup";
 import { addToCart } from "../redux/actions/cartAction";
 import product1Thumb from "../img/image-product-1-thumbnail.jpg";
-import { SideBar } from "./SideBar";
 
 export const Main = () => {
     const dispatch = useDispatch();
@@ -46,11 +45,8 @@ export const Main = () => {
         }
     };
 
-    // const { sidebar } = useSelector((state) => state.sidebar);
-
     return (
         <>
-            {/* {sidebar && <SideBar />} */}
             {focusing && <ImgDetailsGroup exitDetails={exitDetails} />}
             <Flex
                 px={["5px", "10px", "35px"]}
