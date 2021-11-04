@@ -11,8 +11,8 @@ import product1Thumb from "../img/image-product-1-thumbnail.jpg";
 export const Main = () => {
     const dispatch = useDispatch();
 
-    const [itemName, setItemName] = useState("Fall Limited Edition Sneakers");
-    const [itemPrice, setItemPrice] = useState(125.0);
+    const itemName = "Fall Limited Edition Sneakers";
+    const itemPrice = 125.0;
 
     const [focusing, setFocusing] = useState(false);
     const [cartItem, setCartItem] = useState(0);
