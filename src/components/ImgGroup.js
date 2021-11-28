@@ -57,7 +57,7 @@ export const ImgPreviewGroup = ({ viewDetails }) => {
             />
             <Flex align="center" justify="space-between">
                 <Box
-                    width="20%"
+                    width={["17%", "18%", "19%"]}
                     border={focusItem === "item-one" && border}
                     borderRadius="2xl"
                     display="inline-block"
@@ -72,7 +72,7 @@ export const ImgPreviewGroup = ({ viewDetails }) => {
                     />
                 </Box>
                 <Box
-                    width="20%"
+                    width={["17%", "18%", "19%"]}
                     border={focusItem === "item-two" && border}
                     borderRadius="2xl"
                     display="inline-block"
@@ -87,7 +87,7 @@ export const ImgPreviewGroup = ({ viewDetails }) => {
                     />
                 </Box>
                 <Box
-                    width="20%"
+                    width={["17%", "18%", "19%"]}
                     border={focusItem === "item-three" && border}
                     borderRadius="2xl"
                     display="inline-block"
@@ -102,7 +102,7 @@ export const ImgPreviewGroup = ({ viewDetails }) => {
                     />
                 </Box>
                 <Box
-                    width="20%"
+                    width={["17%", "18%", "19%"]}
                     border={focusItem === "item-four" && border}
                     borderRadius="2xl"
                     display="inline-block"
@@ -249,7 +249,7 @@ export const ImgDetailsGroup = ({ exitDetails }) => {
                 <Flex align="center" justify="center">
                     <Box
                         mx={["8px", "10px", "10px"]}
-                        width={["15%", "20%", "20%"]}
+                        width={["10%", "13%", "13%"]}
                         bg="white"
                         border={focusItem === 1 && border}
                         borderRadius="2xl"
@@ -266,7 +266,7 @@ export const ImgDetailsGroup = ({ exitDetails }) => {
                     </Box>
                     <Box
                         mx={["8px", "10px", "10px"]}
-                        width={["15%", "20%", "20%"]}
+                        width={["10%", "13%", "13%"]}
                         bg="white"
                         border={focusItem === 2 && border}
                         borderRadius="2xl"
@@ -283,7 +283,7 @@ export const ImgDetailsGroup = ({ exitDetails }) => {
                     </Box>
                     <Box
                         mx={["8px", "10px", "10px"]}
-                        width={["15%", "20%", "20%"]}
+                        width={["10%", "13%", "13%"]}
                         bg="white"
                         border={focusItem === 3 && border}
                         borderRadius="2xl"
@@ -300,7 +300,7 @@ export const ImgDetailsGroup = ({ exitDetails }) => {
                     </Box>
                     <Box
                         mx={["8px", "10px", "10px"]}
-                        width={["15%", "20%", "20%"]}
+                        width={["10%", "13%", "13%"]}
                         bg="white"
                         border={focusItem === 4 && border}
                         borderRadius="2xl"
