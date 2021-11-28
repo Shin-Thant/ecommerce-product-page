@@ -20,6 +20,8 @@ function App() {
         setSidebarStatus(true);
     };
 
+    console.log(sidebarStatus);
+
     return (
         <Box width={["90%", "80%"]} mx="auto" my="2rem">
             <Navbar open={open} />
