@@ -47,17 +47,20 @@ export const ImgPreviewGroup = ({ viewDetails }) => {
 
     return (
         <Box flex="1">
-            <Image
-                onClick={viewDetails}
-                borderRadius="2xl"
-                cursor="pointer"
-                src={mainImg}
-                alt=""
-                mb="1.5rem"
-            />
-            <Flex align="center" justify="space-between">
+            <Flex justify="center" width="100%">
+                <Image
+                    width="80%"
+                    onClick={viewDetails}
+                    borderRadius="2xl"
+                    cursor="pointer"
+                    src={mainImg}
+                    alt=""
+                    mb="1.5rem"
+                />
+            </Flex>
+            <Flex align="center" justify="space-around">
                 <Box
-                    width={["17%", "18%", "19%"]}
+                    width={["17%", "17%", "19%"]}
                     border={focusItem === "item-one" && border}
                     borderRadius="2xl"
                     display="inline-block"
@@ -72,7 +75,7 @@ export const ImgPreviewGroup = ({ viewDetails }) => {
                     />
                 </Box>
                 <Box
-                    width={["17%", "18%", "19%"]}
+                    width={["17%", "17%", "19%"]}
                     border={focusItem === "item-two" && border}
                     borderRadius="2xl"
                     display="inline-block"
@@ -87,7 +90,7 @@ export const ImgPreviewGroup = ({ viewDetails }) => {
                     />
                 </Box>
                 <Box
-                    width={["17%", "18%", "19%"]}
+                    width={["17%", "17%", "19%"]}
                     border={focusItem === "item-three" && border}
                     borderRadius="2xl"
                     display="inline-block"
@@ -102,7 +105,7 @@ export const ImgPreviewGroup = ({ viewDetails }) => {
                     />
                 </Box>
                 <Box
-                    width={["17%", "18%", "19%"]}
+                    width={["17%", "17%", "19%"]}
                     border={focusItem === "item-four" && border}
                     borderRadius="2xl"
                     display="inline-block"

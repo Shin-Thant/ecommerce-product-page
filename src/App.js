@@ -2,13 +2,13 @@ import { Box } from "@chakra-ui/layout";
 import React, { useState } from "react";
 import { Main } from "./components/Main";
 import { Navbar } from "./components/Navbar";
-import { createBreakpoints } from "@chakra-ui/theme-tools";
+// import { createBreakpoints } from "@chakra-ui/theme-tools";
 
-const breakpoints = createBreakpoints({
-    sm: "530px",
-    md: "750px",
-    lg: "950px",
-});
+// const breakpoints = createBreakpoints({
+//     sm: "530px",
+//     md: "750px",
+//     lg: "950px",
+// });
 
 function App() {
     const [sidebarStatus, setSidebarStatus] = useState(false);
